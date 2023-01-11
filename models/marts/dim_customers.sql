@@ -6,7 +6,7 @@ with customers as
 
 orders as
 (
-    select * from {{  ref('stg_orders')  }}
+    select * from {{  ref('fct_orders')  }}
 ),
 
 customer_orders as (
@@ -40,5 +40,7 @@ final as (
     left join customer_orders using (customer_id)
 
 )
+
+
 
 select * from final
