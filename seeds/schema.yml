@@ -1,0 +1,12 @@
+version : 2
+
+seeds:
+  - name : employees
+    description: seed table
+    columns:
+      - name: employee_id
+        tests:
+         - not_null
+         - unique
+          
+
