@@ -6,7 +6,8 @@
           target_schema='snap',
           strategy='check',
           unique_key='id',
-          check_cols = 'all'
+          check_cols = 'all',
+          invalidate_hard_deletes=True,
         )
     }}
 
